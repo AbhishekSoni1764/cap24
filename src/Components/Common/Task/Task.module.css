@@ -1,0 +1,253 @@
+*{
+  font-family: "Nexa";
+}
+
+.img_Ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_Ctn img {
+  border-radius: 6px;
+  margin-top: -2rem;
+}
+
+.major_tsk {
+  display: flex;
+    flex-direction: column;
+    width: 48vw;
+    /* margin: 2vw 0vw; */
+    padding: 1vw 1.5vw;
+    border-radius: 1vw;
+    height: 22vw;
+    color: white;
+}
+
+.gradientBorder {
+  --border-width: 2px;
+  --border-radius: 12px;
+  background: linear-gradient(153deg, #09fbd3 0%, rgba(9, 251, 211, 0) 50.8%);
+  border: 0;
+  position: relative;
+  border-radius: var(--border-radius);
+  z-index: 1;
+}
+.gradientBorder::before {
+  content: "";
+  display: block;
+  height: calc(100% - calc(var(--border-width) * 2));
+  width: calc(100% - calc(var(--border-width) * 2));
+  background: linear-gradient(153deg, #2E1371 0%, #21232F 95.85%);
+  position: absolute;
+  top: var(--border-width);
+  left: var(--border-width);
+  border-radius: calc(var(--border-radius) - var(--border-width));
+  z-index: -1;
+}
+.header_ctn {
+  height: 17%;
+}
+
+.tsk_content {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.Task {
+  /* background: rgba(3, 1, 1, 1); */
+  /* width: calc(100% - 2vw); */
+  height: 100%;
+  /* border-radius: 1rem; */
+  color: white;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* padding: 1vw; */
+}
+
+.points p {
+  color: #663399;
+  font-size: 1vw;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.latesttask h1 {
+  font-weight: 500 !important;
+  text-align: center;
+  font-family: 'Nexa-bold';
+  font-size: 1.6vw;
+}
+
+.heading {
+  font-family: 'Nexa';
+  width: 98%;
+}
+.heading span {
+  font-weight: 800;
+}
+.deadline span {
+  font-weight: 800;
+}
+
+.heading h2 {
+  width: 100%;
+  font-size: 1.6vw;
+  text-transform: capitalize;
+}
+
+.points {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0vw 0.4vw;
+  border-radius: 0.2rem;
+  background: white;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.media {
+  cursor: pointer;
+  background-color: white;
+  height: 2.4vw;
+  width: 2.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+}
+
+.media i {
+  color: #663399 !important;
+}
+
+@media screen and (max-width: 900px) {
+  .img_Ctn {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-items: flex-start;
+  }
+
+  .img_Ctn img {
+    width: 100%;
+    height: 40%;
+    border-radius: 6px;
+    margin-top: 3.5vh;
+  }
+
+  .header_ctn {
+    height: 8%;
+  }
+
+  .MainTask {
+    margin-bottom: 15vw;
+  }
+
+  .latesttask h1 {
+    font-weight: 700 !important;
+    text-align: center;
+    font-size: 5.2vw;
+  }
+
+  .Task {
+    text-align: center;
+    margin: 7vw 0vw;
+    height: calc(30.5vw - 2vw);
+    border-radius: 5.27vw;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5vw;
+    padding: 1vw;
+  }
+
+  .Task h1 {
+    font-size: 6vw;
+  }
+
+  .major_tsk {
+    height: 46vw;
+  }
+
+  .Task {
+    margin-top: 0px !important;
+
+    width: calc(100% - 10vw);
+    text-align: justify;
+    margin: 17vw 0vw;
+    height: fit-content;
+    border-radius: 5.27vw;
+    color: white;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5vw;
+  }
+
+  .description {
+    margin-top: 3vw;
+  }
+
+  .subheading {
+    font-size: 4vw;
+    margin-top: 3vw;
+  }
+
+  .heading {
+    margin-top: 3vw;
+  }
+
+  .heading h2 {
+    font-size: 3vw;
+    text-transform: capitalize;
+  }
+
+  .deadline {
+    margin-top: 3vw;
+  }
+
+  .deadline p {
+    font-size: 3vw;
+  }
+
+  .Task h1 {
+    font-size: 6vw;
+  }
+
+  .description p {
+    font-size: 3.7vw;
+    line-height: 4vw;
+  }
+
+  .points {
+    height: 5vw;
+  }
+
+  .points p {
+    font-size: 2.5vw;
+    font-weight: 600;
+  }
+
+  .media {
+    height: 4.9vw;
+    width: 4.4vw;
+  }
+
+  .media i {
+    font-size: 3vw;
+  }
+
+  .media a {
+    line-height: 0px;
+  }
+}

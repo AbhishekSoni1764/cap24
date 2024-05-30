@@ -1,0 +1,147 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* body{
+overflow: hidden;
+} */
+
+body::-webkit-scrollbar{
+  display: none !important;
+}
+
+
+.MuiInput-underline:before {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "\00a0";
+    position: absolute;
+    transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-bottom: none !important;
+    pointer-events: none;
+}
+
+.MuiInput-underline:after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    transform: scaleX(0);
+    transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    border-bottom: none !important;
+    pointer-events: none;
+}
+
+
+
+
+/* .datalist-input .default-datalist-items {
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  overflow-y: scroll;
+  height: 20vh;
+  border: none;
+} */
+
+
+.datalist-input .default-datalist-items div:not(.datalist-active-item) {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.datalist-input .default-datalist-items {
+    /* border: 1px solid #d4d4d4; */
+    border: none !important;
+    /* border-top: none; */
+    overflow-y: scroll;
+    height:40vh
+  }
+  
+  .datalist-input .datalist-items {
+    border: none !important;
+    position: absolute;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.datalist-input .default-datalist-items ::-webkit-scrollbar {
+  /* width: 15px; */
+  display: none !important;
+}
+.datalist-input .datalist-items::-webkit-scrollbar {
+  /* width: 15px; */
+  display: none !important;
+  
+}
+::-webkit-scrollbar {
+        width: 15px;
+        display: block;
+        
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+          display: block;
+        box-shadow: none; 
+        border-radius: 10px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+      height: 50px; background-color: #787878; border-radius: 10px;
+      display: block;
+      }
+      
+       ::-webkit-scrollbar-track-piece { 
+           background-color: #000; 
+           border-radius: 10px; 
+        }
+        
+ @media (max-width:480px) {
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+      }

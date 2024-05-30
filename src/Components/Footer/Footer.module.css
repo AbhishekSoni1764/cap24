@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Space+Grotesk:wght@300&display=swap");
+
+.orange {
+  color: #ef6522;
+}
+
+.aaruush {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 1.5vw;
+  color: #ffffff;
+  padding-top: 1vh;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+
+  /* background-image: url(../../Assets/Svg/footer-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  border: none;
+}
+.cover {
+  background-image: url(../../Assets/Svg/footer-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer_head {
+  font-family: SF Distant Galaxy;
+  font-size: 19px;
+}
+
+.orangelink {
+  color: #ef6522;
+  cursor: pointer;
+}
+
+.orangelink:hover {
+  color: #ca551a;
+}
+
+.child {
+  margin-top: 20px;
+}
+
+.childlist {
+  margin-top: 20px;
+}
+
+.child li {
+  margin-bottom: 10px;
+}
+
+.child li:hover {
+  cursor: pointer;
+}
+
+.childlist li {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 850px) {
+  .aaruush {
+    font-size: 8vw;
+  }
+
+  .footer {
+    background-position: bottom left, bottom right;
+    background-size: 100%, 0;
+  }
+}

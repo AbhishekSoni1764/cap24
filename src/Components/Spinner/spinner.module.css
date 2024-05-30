@@ -1,0 +1,13 @@
+.spinner_container{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    background-color:#030303;
+}
+
+
+.spinner{
+    width:30vw;
+    margin:auto;
+}
+

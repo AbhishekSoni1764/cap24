@@ -1,0 +1,487 @@
+:root {
+    --color-ui-1: #f3f5f6;
+    --color-brand-1: #31c903;
+    --color-brand-2: #cc4a53;
+  }
+  
+  .progress-circle {
+    height: 2.3vw;
+    position: relative;
+    width: 2.3vw;
+  }
+  .side-circle{
+    width:  6vw !important;
+    height: 6vw !important;
+  }
+  
+  .progress-circle__svg {
+      border-radius: 50%;
+      height: 100%;
+      transform: scaleX(-1) rotate(-90deg);
+      width: 100%;
+    }
+  
+  .progress-circle__stroke {
+      fill: none;
+      stroke-width: 0.25rem;
+    }
+
+  .side_bar_prog {
+    stroke-width: 0.8rem !important;
+  }
+  
+  .progress-circle__stroke:nth-child(1) {
+        stroke: var(--color-brand-1);
+      }
+
+  .alter:nth-child(1) {
+    stroke: var(--color-brand-2) !important;
+  }
+  
+  .progress-circle__stroke:nth-child(2) {
+        stroke: var(--color-ui-1);
+        stroke-dasharray: 314.1592%;
+      }
+  
+  .progress-circle[data-percentage="0"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (0 / 100));
+        }
+  
+  .progress-circle[data-percentage="1"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (1 / 100));
+        }
+  
+  .progress-circle[data-percentage="2"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (2 / 100));
+        }
+  
+  .progress-circle[data-percentage="3"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (3 / 100));
+        }
+  
+  .progress-circle[data-percentage="4"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (4 / 100));
+        }
+  
+  .progress-circle[data-percentage="5"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (5 / 100));
+        }
+  
+  .progress-circle[data-percentage="6"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (6 / 100));
+        }
+  
+  .progress-circle[data-percentage="7"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (7 / 100));
+        }
+  
+  .progress-circle[data-percentage="8"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (8 / 100));
+        }
+  
+  .progress-circle[data-percentage="9"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (9 / 100));
+        }
+  
+  .progress-circle[data-percentage="10"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (10 / 100));
+        }
+  
+  .progress-circle[data-percentage="11"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (11 / 100));
+        }
+  
+  .progress-circle[data-percentage="12"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (12 / 100));
+        }
+  
+  .progress-circle[data-percentage="13"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (13 / 100));
+        }
+  
+  .progress-circle[data-percentage="14"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (14 / 100));
+        }
+  
+  .progress-circle[data-percentage="15"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (15 / 100));
+        }
+  
+  .progress-circle[data-percentage="16"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (16 / 100));
+        }
+  
+  .progress-circle[data-percentage="17"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (17 / 100));
+        }
+  
+  .progress-circle[data-percentage="18"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (18 / 100));
+        }
+  
+  .progress-circle[data-percentage="19"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (19 / 100));
+        }
+  
+  .progress-circle[data-percentage="20"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (20 / 100));
+        }
+  
+  .progress-circle[data-percentage="21"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (21 / 100));
+        }
+  
+  .progress-circle[data-percentage="22"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (22 / 100));
+        }
+  
+  .progress-circle[data-percentage="23"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (23 / 100));
+        }
+  
+  .progress-circle[data-percentage="24"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (24 / 100));
+        }
+  
+  .progress-circle[data-percentage="25"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (25 / 100));
+        }
+  
+  .progress-circle[data-percentage="26"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (26 / 100));
+        }
+  
+  .progress-circle[data-percentage="27"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (27 / 100));
+        }
+  
+  .progress-circle[data-percentage="28"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (28 / 100));
+        }
+  
+  .progress-circle[data-percentage="29"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (29 / 100));
+        }
+  
+  .progress-circle[data-percentage="30"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (30 / 100));
+        }
+  
+  .progress-circle[data-percentage="31"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (31 / 100));
+        }
+  
+  .progress-circle[data-percentage="32"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (32 / 100));
+        }
+  
+  .progress-circle[data-percentage="33"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (33 / 100));
+        }
+  
+  .progress-circle[data-percentage="34"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (34 / 100));
+        }
+  
+  .progress-circle[data-percentage="35"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (35 / 100));
+        }
+  
+  .progress-circle[data-percentage="36"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (36 / 100));
+        }
+  
+  .progress-circle[data-percentage="37"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (37 / 100));
+        }
+  
+  .progress-circle[data-percentage="38"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (38 / 100));
+        }
+  
+  .progress-circle[data-percentage="39"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (39 / 100));
+        }
+  
+  .progress-circle[data-percentage="40"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (40 / 100));
+        }
+  
+  .progress-circle[data-percentage="41"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (41 / 100));
+        }
+  
+  .progress-circle[data-percentage="42"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (42 / 100));
+        }
+  
+  .progress-circle[data-percentage="43"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (43 / 100));
+        }
+  
+  .progress-circle[data-percentage="44"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (44 / 100));
+        }
+  
+  .progress-circle[data-percentage="45"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (45 / 100));
+        }
+  
+  .progress-circle[data-percentage="46"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (46 / 100));
+        }
+  
+  .progress-circle[data-percentage="47"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (47 / 100));
+        }
+  
+  .progress-circle[data-percentage="48"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (48 / 100));
+        }
+  
+  .progress-circle[data-percentage="49"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (49 / 100));
+        }
+  
+  .progress-circle[data-percentage="50"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (50 / 100));
+        }
+  
+  .progress-circle[data-percentage="51"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (51 / 100));
+        }
+  
+  .progress-circle[data-percentage="52"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (52 / 100));
+        }
+  
+  .progress-circle[data-percentage="53"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (53 / 100));
+        }
+  
+  .progress-circle[data-percentage="54"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (54 / 100));
+        }
+  
+  .progress-circle[data-percentage="55"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (55 / 100));
+        }
+  
+  .progress-circle[data-percentage="56"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (56 / 100));
+        }
+  
+  .progress-circle[data-percentage="57"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (57 / 100));
+        }
+  
+  .progress-circle[data-percentage="58"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (58 / 100));
+        }
+  
+  .progress-circle[data-percentage="59"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (59 / 100));
+        }
+  
+  .progress-circle[data-percentage="60"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (60 / 100));
+        }
+  
+  .progress-circle[data-percentage="61"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (61 / 100));
+        }
+  
+  .progress-circle[data-percentage="62"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (62 / 100));
+        }
+  
+  .progress-circle[data-percentage="63"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (63 / 100));
+        }
+  
+  .progress-circle[data-percentage="64"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (64 / 100));
+        }
+  
+  .progress-circle[data-percentage="65"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (65 / 100));
+        }
+  
+  .progress-circle[data-percentage="66"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (66 / 100));
+        }
+  
+  .progress-circle[data-percentage="67"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (67 / 100));
+        }
+  
+  .progress-circle[data-percentage="68"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (68 / 100));
+        }
+  
+  .progress-circle[data-percentage="69"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (69 / 100));
+        }
+  
+  .progress-circle[data-percentage="70"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (70 / 100));
+        }
+  
+  .progress-circle[data-percentage="71"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (71 / 100));
+        }
+  
+  .progress-circle[data-percentage="72"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (72 / 100));
+        }
+  
+  .progress-circle[data-percentage="73"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (73 / 100));
+        }
+  
+  .progress-circle[data-percentage="74"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (74 / 100));
+        }
+  
+  .progress-circle[data-percentage="75"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (75 / 100));
+        }
+  
+  .progress-circle[data-percentage="76"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (76 / 100));
+        }
+  
+  .progress-circle[data-percentage="77"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (77 / 100));
+        }
+  
+  .progress-circle[data-percentage="78"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (78 / 100));
+        }
+  
+  .progress-circle[data-percentage="79"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (79 / 100));
+        }
+  
+  .progress-circle[data-percentage="80"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (80 / 100));
+        }
+  
+  .progress-circle[data-percentage="81"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (81 / 100));
+        }
+  
+  .progress-circle[data-percentage="82"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (82 / 100));
+        }
+  
+  .progress-circle[data-percentage="83"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (83 / 100));
+        }
+  
+  .progress-circle[data-percentage="84"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (84 / 100));
+        }
+  
+  .progress-circle[data-percentage="85"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (85 / 100));
+        }
+  
+  .progress-circle[data-percentage="86"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (86 / 100));
+        }
+  
+  .progress-circle[data-percentage="87"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (87 / 100));
+        }
+  
+  .progress-circle[data-percentage="88"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (88 / 100));
+        }
+  
+  .progress-circle[data-percentage="89"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (89 / 100));
+        }
+  
+  .progress-circle[data-percentage="90"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (90 / 100));
+        }
+  
+  .progress-circle[data-percentage="91"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (91 / 100));
+        }
+  
+  .progress-circle[data-percentage="92"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (92 / 100));
+        }
+  
+  .progress-circle[data-percentage="93"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (93 / 100));
+        }
+  
+  .progress-circle[data-percentage="94"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (94 / 100));
+        }
+  
+  .progress-circle[data-percentage="95"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (95 / 100));
+        }
+  
+  .progress-circle[data-percentage="96"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (96 / 100));
+        }
+  
+  .progress-circle[data-percentage="97"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (97 / 100));
+        }
+  
+  .progress-circle[data-percentage="98"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (98 / 100));
+        }
+  
+  .progress-circle[data-percentage="99"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (99 / 100));
+        }
+  
+  .progress-circle[data-percentage="100"] .progress-circle__stroke:nth-child(2) {
+          stroke-dashoffset: calc(314.1592% * (100 / 100));
+        }
+  
+
+
+.progress-circle p{
+    margin-top: -1.9vw;
+    font-size: 0.7vw;
+}
+@media screen and (max-width:900px){
+  .progress-circle p{
+    margin-top: -4.2vw;
+    font-size: 1.5vw;
+  }
+  .progress-circle{
+    height: 4.3vw;
+    position: relative;
+    width: 4.3vw;
+  }
+}
+
+
+@media screen and (max-width:450px){
+  .progress-circle{
+    height: 7.3vw;
+    position: relative;
+    width: 7.3vw;
+  }
+  .progress-circle p{
+    margin-top: -6.5vw;
+    font-size: 3vw;
+  }
+  
+}
+
+@media screen and (max-width:900px){
+  .side-circle{
+    width: 20vw !important;
+    height: 20vw !important;
+}
+}

@@ -1,0 +1,221 @@
+.MainTask {
+  /* background-color: #02111B; */
+  align-items: center;
+  height: 100%;
+  padding: 0vw 3vw;
+  overflow-y: scroll;
+  font-family: 'Nexa';
+}
+
+.Task {
+  /* margin: 2vw 0vw; */
+  position: relative;
+  /* background: linear-gradient(117.6deg, rgba(0, 104, 164, 1) -7.49%, rgba(232, 80, 91, 0) 371.06%); */
+  width: calc(100% - 4vw);
+  /* height: calc(16.5vw - 4vw); */
+  height: fit-content;
+  /* border-radius: 1vw; */
+  color: white;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* gap: 1vw; */
+  padding: 2vw;
+  /* padding-top:1vw; */
+  text-align: left !important;
+}
+
+.description {
+  margin-top: 1vw;
+}
+
+.description p {
+  cursor: pointer;
+}
+
+.subheading {
+  margin-top: 1vw;
+}
+
+.heading {
+  font-size: x-large;
+}
+
+.deadline {
+  margin-top: 1vw;
+}
+
+.deadline p {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.points span {
+  color: #663399;
+  font-size: 1vw;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.points {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4vw 1vw;
+  border-radius: 0.2rem;
+  background: white;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 1.3vw;
+}
+
+.media {
+  cursor: pointer;
+  background-color: white;
+  height: 2.4vw;
+  width: 2.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+}
+
+.media i {
+  color: #663399 !important;
+}
+
+.ind_Tast {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  /* background: linear-gradient(
+    117.6deg,
+    rgba(0, 104, 164, 1) -7.49%,
+    rgba(232, 80, 91, 0) 371.06%
+  ); */
+  background-color: rgba(255, 255, 255, 0.1);
+  width: calc(70%);
+  margin: 2vw 0vw;
+  border-radius: 1vw;
+}
+.gradientBorder {
+  --border-width: 2px;
+  --border-radius: 12px;
+  background: linear-gradient(160deg, #09fbd3 0%, rgba(9, 251, 211, 0) 50.8%);
+  border: 0;
+  position: relative;
+  border-radius: var(--border-radius);
+  z-index: 1;
+}
+.gradientBorder::before {
+  content: "";
+  display: block;
+  height: calc(100% - calc(var(--border-width) * 2));
+  width: calc(100% - calc(var(--border-width) * 2));
+  background: linear-gradient(124.53deg, #2E1371 0%, #21232F 95.85%);
+  position: absolute;
+  top: var(--border-width);
+  left: var(--border-width);
+  border-radius: calc(var(--border-radius) - var(--border-width));
+  z-index: -1;
+}
+.img_Ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_Ctn img {
+  margin-right: 4vw;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 900px) {
+  .ind_Tast {
+    display: flex;
+  }
+
+  .img_Ctn img {
+    width: 16vw;
+    height: 9vh;
+    margin-top: 2vh;
+  }
+
+  .img_Ctn {
+    display: block;
+  }
+
+  .MainTask {
+    height: calc(100% - 20vw);
+    padding-bottom: 20vw;
+  }
+
+  .Task {
+    width: calc(100% - 28vw);
+    text-align: justify;
+    height: fit-content;
+    border-radius: 5.27vw;
+    color: white;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5vw;
+    padding-top: 4vw;
+  }
+
+  .description {
+    margin-top: 3vw;
+    /* font-size:1vw; */
+  }
+
+  .subheading {
+    font-size: 4vw;
+    margin-top: 3vw;
+  }
+
+  .heading {
+    margin-top: 3vw;
+  }
+
+  .deadline {
+    margin-top: 3vw;
+    font-size: 3vw;
+  }
+
+  .Task h1 {
+    font-size: 3.5vw;
+  }
+
+  .description p {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  .points {
+    height: 5vw;
+    width: 8vw;
+  }
+
+  .points p {
+    font-size: 2.1vw !important;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .media {
+    height: 6vw;
+    width: 5vw;
+  }
+
+  .media i {
+    font-size: 3vw;
+  }
+
+  .media a {
+    line-height: 0px;
+  }
+}

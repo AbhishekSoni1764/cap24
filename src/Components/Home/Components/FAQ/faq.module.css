@@ -1,0 +1,207 @@
+.faq_container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2vh 5vh;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px);
+}
+
+/* .radialBackground {
+  background: rgb(75,65,114);
+  background: radial-gradient(circle, rgba(75,65,114,1) 0%, rgba(35,24,67,1) 66%, rgba(20,9,50,1) 100%);
+} */
+.textShadow {
+  text-shadow: 0px 4.89px 34.24px rgba(255, 255, 255, 0.54);
+}
+.topBorder {
+  --border-width: 2px;
+  --border-radius: 12px;
+  background: linear-gradient(149deg, #09fbd3 0%, rgba(9, 251, 211, 0) 50.8%);
+  border: 0;
+  position: relative;
+  border-radius: var(--border-radius);
+  z-index: 1;
+}
+.topBorder::before {
+  content: "";
+  display: block;
+  height: calc(100% - calc(var(--border-width) * 2));
+  width: calc(100% - calc(var(--border-width) * 2));
+  background: linear-gradient(124.53deg, #2E1371 0%, #21232F 95.85%);
+  position: absolute;
+  top: var(--border-width);
+  left: var(--border-width);
+  border-radius: calc(var(--border-radius) - var(--border-width));
+  z-index: -1;
+}
+.gradientBorder {
+  --border-width: 4px;
+  --border-radius: 12px;
+  background: linear-gradient(
+    186deg,
+    #ff00d6 -12.11%,
+    rgba(26, 142, 149, 0.595) 49.58%,
+    rgba(251, 47, 255, 0.3) 111.27%
+  );
+  border: 0;
+  position: relative;
+  border-radius: var(--border-radius);
+  z-index: 1;
+}
+.gradientBorder::before {
+  content: "";
+  display: block;
+  height: calc(100% - calc(var(--border-width) * 2));
+  width: calc(100% - calc(var(--border-width) * 2));
+  background: linear-gradient(162deg, #2E1371 0%, #21232F 95.85%);
+  position: absolute;
+  top: var(--border-width);
+  left: var(--border-width);
+  border-radius: calc(var(--border-radius) - var(--border-width));
+  z-index: -1;
+  box-shadow: -8px 11px 30.07px 0px #ffffff19 inset;
+}
+.faq_div {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 0.5rem;
+  color: white;
+  backdrop-filter: blur(10px);
+  border-left: 3px solid #0068a4 !important;
+  border-right: 3px solid #0068a4;
+
+  box-shadow: 10px 10px 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.faq {
+  padding: 0 5vh;
+}
+
+.faq_list {
+  padding: 0;
+  list-style: none;
+}
+
+.faq_listli {
+  color: white;
+  padding-bottom: 10px;
+}
+
+.faq_lista {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.faq_list i {
+  font-size: 18px;
+  position: absolute;
+  left: -25px;
+  top: 6px;
+}
+
+.faq_list p {
+  padding-top: 5px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 15px;
+}
+
+.faq_list a.collapse {
+  color: #0068a4;
+}
+
+.faq_list a.collapsed {
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.faq_list a.collapsed:hover {
+  color: #0068a4;
+}
+
+.faqs {
+  display: flex;
+}
+
+.faqhover2 {
+  cursor: pointer;
+  /* padding: 0 0 20px 5px; */
+}
+
+.faqhover1 {
+  cursor: pointer;
+  padding: 0 0 0px 5px;
+}
+
+.color {
+  /* color: #0068a4; */
+  font-weight: bold;
+}
+
+.section_title {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 10%;
+}
+
+.section_title h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1px;
+  color: white;
+}
+
+.section_title p {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(255, 255, 255, 0.9);
+}
+
+/* .section_title p::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #0068A4;
+  bottom: 0;
+  left: calc(50% - 30px);
+} */
+
+@media (max-width: 900px) {
+  .section_title h2 {
+    font-size: 6vh;
+  }
+  .section_title p {
+    font-size: 3.2vh;
+    padding-top: 1vh;
+  }
+  .faqhover2 {
+    -webkit-tap-highlight-color: transparent;
+  }
+  .faqhover1 {
+    -webkit-tap-highlight-color: transparent;
+  }
+  .faqhover2 div {
+    font-size: 3vw;
+  }
+  .faqhover1 div {
+    font-size: 3vw;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .answer p {
+    font-size: 2 0.5vw;
+  }
+
+  .faq {
+    padding: 0 5px;
+  }
+  .faq_container {
+    padding: 2vh 5px;
+  }
+}

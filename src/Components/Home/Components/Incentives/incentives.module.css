@@ -1,0 +1,163 @@
+.section_title {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 7%;
+}
+
+.section_title h2 {
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 0;
+  line-height: 1px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.section_title p {
+  padding-bottom: 15px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  position: relative;
+  font-weight: 700;
+  color: rgb(255, 255, 255, 0.9);
+}
+/* .radialBackground {
+  background: rgb(75,65,114);
+  background: radial-gradient(circle, rgba(75,65,114,1) 0%, rgba(35,24,67,1) 66%, rgba(20,9,50,1) 100%);
+} */
+.gradientBorder {
+  --border-width: 2px;
+  --border-radius: 12px;
+  background: linear-gradient(135deg, #09fbd3 0%, rgba(9, 251, 211, 0) 50.8%);
+  border: 0;
+  position: relative;
+  border-radius: var(--border-radius);
+  z-index: 1;
+}
+.gradientBorder::before {
+  content: "";
+  display: block;
+  height: calc(100% - calc(var(--border-width) * 2));
+  width: calc(100% - calc(var(--border-width) * 2));
+  background: linear-gradient(124.53deg, #2E1371 0%, #21232F 95.85%);
+  position: absolute;
+  top: var(--border-width);
+  left: var(--border-width);
+  border-radius: calc(var(--border-radius) - var(--border-width));
+  z-index: -1;
+}
+.textShadow {
+  text-shadow: 0px 4.89px 34.24px rgba(255, 255, 255, 0.54);
+}
+/* .section_title p::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #0068a4;
+  bottom: 0;
+  left: calc(50% - 30px);
+} */
+
+.car {
+  display: flex;
+  /* width:100vw; */
+  /* flex-direction: column; */
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sect_1 {
+  display: flex;
+  gap: 1vw;
+  padding: 2vw 10px;
+}
+
+.incentivebox {
+  border-top: 3px solid #663399 !important;
+  border-bottom: 3px solid #663399;
+  color: white;
+  padding: 30px;
+  /* position: relative; */
+  overflow: hidden;
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease-in-out;
+  border-radius: 1rem;
+  height: 50vh;
+  width: 40vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.icon1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon11 {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 21px;
+  text-align: center;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.icon62 {
+  max-width: 19%;
+}
+
+.img {
+  background-color: #eee;
+  max-width: 50%;
+  max-height: 50%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 640px) {
+  .title {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sect_1 {
+    display: flex;
+    /* grid-gap: 0.5vw; */
+    padding: 1vw 10px;
+    flex-direction: column;
+  }
+
+  .incentivebox {
+    height: fit-content;
+    border-radius: 0.5rem;
+    margin: 10px;
+    padding: 15px;
+    width: 70vw;
+  }
+
+  .car {
+    padding: 10px;
+  }
+}
